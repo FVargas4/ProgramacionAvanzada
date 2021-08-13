@@ -1,16 +1,16 @@
 #include <stdio.h>
 
 int main(){
-	
-    int numeros = 100;
-    int i, j;
-    
-    for(i = 1; i <= numeros; i++){
-        if(i == 1){
-            continue;
+	printf("Numeros primos del 1 al 100:\n");
+    for(int i= 1; i <= 100; i++){
+        int count = 0;
+        for(int j = 1; j <= i; j++){
+            if(i%j == 0){
+                count++;
+            }
         }
-        else if(i / 1 && i/i){
-            
+        if(count == 2){
+            printf("%d, ", i);
         }
     }
 
